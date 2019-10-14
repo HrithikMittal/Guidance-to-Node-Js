@@ -27,32 +27,35 @@
 <body>
   
     <!-- Starting the intro part -->
-    <div class="container-fluid">
+    <div class="container-fluid" >
       <div class="row">
         <div class="col-sm intro">
           <h1 class="heading">
-            <b>Build anything in Node JS</b>
+            <b style="position: relative;">Build anything in Node JS</b>
+          
             <br />It is
             <a
               class="typewrite"
               data-period="2000"
-              style="color:	#13abc7"
+              style="color:	#13abc7;"
               data-type='[ "asynchronous.", "event Driven.", "super fast.", "Single Threaded but Highly Scalable.","Useful business MVPs." ]'
             >
-              <span class="wrap"></span>
+              <span class="wrap" style="background-color: transparent;"></span>
             </a>
           </h1>
+        <section id="section06" class="demo">
+          <a href="#section2"><span></span></a>
+        </section>
         </div>
       </div>
     </div>
     <!-- Ending of intro part  -->
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos sint quisquam repellendus blanditiis eligendi accusamus at suscipit veniam ad? Molestiae, deleniti unde! Nam commodi voluptas aliquid error hic voluptatibus laudantium.
-        
+
     <!-- Starting of concepts part -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="section2" >
       <div class="row">
         <div class="col-sm">
-            <div class="bubbleChart" />
+            <div class="bubbleChart" style="background-color: transparent;"  />
         </div>
       </div>
     </div>
@@ -75,5 +78,9 @@
     <script src="./src/plugins/central-click/central-click.js"></script>
     <script src="./src/plugins/lines/lines.js"></script>
     <script src="test-bubble-chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="./js/particles.js"></script>
+    <script src="./js/scroll.js"></script>
   </body>
 </html>
