@@ -1,14 +1,14 @@
 * {
   margin: 0px;
   padding: 0px;
-}
-
-.intro {
-  height: 50em;
   background: url(../img/Background.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
+}
+
+.intro {
+  height: 50em;
 }
 
 .heading {
@@ -17,4 +17,12 @@
   position: relative;
   text-align: center;
   margin: 4em auto;
+}
+
+.bubbleChart {
+  width: 100%;
+  margin: 0 auto;
+}
+.bubbleChart svg {
+  background: transparent;
 }
