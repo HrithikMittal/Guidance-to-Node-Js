@@ -150,7 +150,7 @@ function calldetails(details) {
       document.getElementById("modal1").click();
       document.getElementById("exampleModalLongTitle").innerHTML = "Events";
       document.getElementById("content1").innerHTML =
-        "<div>Streams are collections of data — just like arrays or strings. The difference is that streams might not be available all at once, and they don’t have to fit in memory. This makes streams really powerful when working with large amounts of data, or data that’s coming from an external source one chunk at a time.<br /><br />However, streams are not only about working with big data.They also give us the power of composability in our code. Just like we can compose powerful linux commands by piping other smaller Linux commands, we can do exactly the same in Node with streams.<img src='./img/img4.png' width=100%'></div>";
+        "<div>Events are one of the key concepts in Node.js and sometimes Node.js is referred to as an Event-driven framework.<br/><br/>Basically, an event is something that happens.For example, if a connection is established to a database, then the database connection event is triggered.Event driven programming is to create functions that will be triggered when specific events are triggered.<img src='./img/img6.png' width=100%'></div>";
       break;
     }
     case "Module Patterns": {
