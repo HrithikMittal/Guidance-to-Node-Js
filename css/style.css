@@ -21,6 +21,12 @@ body {
   background-color: transparent;
 }
 
+@media only screen and (max-width: 200px) {
+  .heading {
+    margin: 100px;
+  }
+}
+
 .bubbleChart {
   width: 100%;
   margin: 0 auto;
