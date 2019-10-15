@@ -173,7 +173,7 @@ function calldetails(details) {
       document.getElementById("exampleModalLongTitle").innerHTML =
         "Async/Await";
       document.getElementById("content1").innerHTML =
-        "<div>Streams are collections of data — just like arrays or strings. The difference is that streams might not be available all at once, and they don’t have to fit in memory. This makes streams really powerful when working with large amounts of data, or data that’s coming from an external source one chunk at a time.<br /><br />However, streams are not only about working with big data.They also give us the power of composability in our code. Just like we can compose powerful linux commands by piping other smaller Linux commands, we can do exactly the same in Node with streams.<img src='./img/img4.png' width=100%'></div>";
+        "<div>The async keyword before a function has two effects:<ol><li>Makes it always return a promise.</li><li>Allows to use await in it.</li></ol><br /><br />The await keyword before a promise makes JavaScript wait until that promise settles, and then:<ol><li>      If it’s an error, the exception is generated, same as if throw error were called at that very place.Otherwise, it returns the result.</li></ol><br /><br />Together they provide a great framework to write asynchronous code that is easy both to read and write.With async / await we rarely need to write promise.then /catch, but we still shouldn’t forget that they are based on promises, because sometimes(e.g.in the outermost scope) we have to use these methods.Also Promise.all is a nice thing to wait for many tasks simultaneously.<img src='./img/img9.png' width=100%'></div>";
       break;
     }
     case "Axios": {
