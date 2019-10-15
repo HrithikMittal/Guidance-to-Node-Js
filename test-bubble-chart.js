@@ -135,49 +135,67 @@ function calldetails(details) {
     case "Streams": {
       document.getElementById("modal1").click();
       document.getElementById("exampleModalLongTitle").innerHTML = "Streams";
+      document.getElementById("content1").innerHTML =
+        "<div>Streams are collections of data — just like arrays or strings. The difference is that streams might not be available all at once, and they don’t have to fit in memory. This makes streams really powerful when working with large amounts of data, or data that’s coming from an external source one chunk at a time.<br /><br />However, streams are not only about working with big data.They also give us the power of composability in our code. Just like we can compose powerful linux commands by piping other smaller Linux commands, we can do exactly the same in Node with streams.<img src='./img/img4.png' width=100%'></div>";
       break;
     }
     case "Pipes": {
       document.getElementById("modal1").click();
       document.getElementById("exampleModalLongTitle").innerHTML = "Pipes";
+      document.getElementById("content1").innerHTML =
+        "<div>Within Node applications, streams can be piped together using the pipe() method, which takes two arguments:<ol><li>A Required writable stream that acts as the destination for the data and An optional object used to pass in options.</li><li>A typical example of using pipes, if you want to transfer data from one file to the other.</li></ol><img src='./img/img5.png' width=100%'></div>";
       break;
     }
     case "Events": {
       document.getElementById("modal1").click();
       document.getElementById("exampleModalLongTitle").innerHTML = "Events";
+      document.getElementById("content1").innerHTML =
+        "<div>Streams are collections of data — just like arrays or strings. The difference is that streams might not be available all at once, and they don’t have to fit in memory. This makes streams really powerful when working with large amounts of data, or data that’s coming from an external source one chunk at a time.<br /><br />However, streams are not only about working with big data.They also give us the power of composability in our code. Just like we can compose powerful linux commands by piping other smaller Linux commands, we can do exactly the same in Node with streams.<img src='./img/img4.png' width=100%'></div>";
       break;
     }
     case "Module Patterns": {
       document.getElementById("modal1").click();
       document.getElementById("exampleModalLongTitle").innerHTML =
         "Module Patterns";
+      document.getElementById("content1").innerHTML =
+        "<div>Streams are collections of data — just like arrays or strings. The difference is that streams might not be available all at once, and they don’t have to fit in memory. This makes streams really powerful when working with large amounts of data, or data that’s coming from an external source one chunk at a time.<br /><br />However, streams are not only about working with big data.They also give us the power of composability in our code. Just like we can compose powerful linux commands by piping other smaller Linux commands, we can do exactly the same in Node with streams.<img src='./img/img4.png' width=100%'></div>";
       break;
     }
     case "Middleware": {
       document.getElementById("modal1").click();
       document.getElementById("exampleModalLongTitle").innerHTML = "Middleware";
+      document.getElementById("content1").innerHTML =
+        "<div>Streams are collections of data — just like arrays or strings. The difference is that streams might not be available all at once, and they don’t have to fit in memory. This makes streams really powerful when working with large amounts of data, or data that’s coming from an external source one chunk at a time.<br /><br />However, streams are not only about working with big data.They also give us the power of composability in our code. Just like we can compose powerful linux commands by piping other smaller Linux commands, we can do exactly the same in Node with streams.<img src='./img/img4.png' width=100%'></div>";
       break;
     }
     case "Async/Await": {
       document.getElementById("modal1").click();
       document.getElementById("exampleModalLongTitle").innerHTML =
         "Async/Await";
+      document.getElementById("content1").innerHTML =
+        "<div>Streams are collections of data — just like arrays or strings. The difference is that streams might not be available all at once, and they don’t have to fit in memory. This makes streams really powerful when working with large amounts of data, or data that’s coming from an external source one chunk at a time.<br /><br />However, streams are not only about working with big data.They also give us the power of composability in our code. Just like we can compose powerful linux commands by piping other smaller Linux commands, we can do exactly the same in Node with streams.<img src='./img/img4.png' width=100%'></div>";
       break;
     }
     case "Axios": {
       document.getElementById("modal1").click();
       document.getElementById("exampleModalLongTitle").innerHTML = "Axios";
+      document.getElementById("content1").innerHTML =
+        "<div>Streams are collections of data — just like arrays or strings. The difference is that streams might not be available all at once, and they don’t have to fit in memory. This makes streams really powerful when working with large amounts of data, or data that’s coming from an external source one chunk at a time.<br /><br />However, streams are not only about working with big data.They also give us the power of composability in our code. Just like we can compose powerful linux commands by piping other smaller Linux commands, we can do exactly the same in Node with streams.<img src='./img/img4.png' width=100%'></div>";
       break;
     }
     case "Work Thread": {
       document.getElementById("modal1").click();
       document.getElementById("exampleModalLongTitle").innerHTML =
         "Work Thread";
+      document.getElementById("content1").innerHTML =
+        "<div>Streams are collections of data — just like arrays or strings. The difference is that streams might not be available all at once, and they don’t have to fit in memory. This makes streams really powerful when working with large amounts of data, or data that’s coming from an external source one chunk at a time.<br /><br />However, streams are not only about working with big data.They also give us the power of composability in our code. Just like we can compose powerful linux commands by piping other smaller Linux commands, we can do exactly the same in Node with streams.<img src='./img/img4.png' width=100%'></div>";
       break;
     }
     case "Others": {
       document.getElementById("modal1").click();
       document.getElementById("exampleModalLongTitle").innerHTML = "Others";
+      document.getElementById("content1").innerHTML =
+        "<div>Streams are collections of data — just like arrays or strings. The difference is that streams might not be available all at once, and they don’t have to fit in memory. This makes streams really powerful when working with large amounts of data, or data that’s coming from an external source one chunk at a time.<br /><br />However, streams are not only about working with big data.They also give us the power of composability in our code. Just like we can compose powerful linux commands by piping other smaller Linux commands, we can do exactly the same in Node with streams.<img src='./img/img4.png' width=100%'></div>";
       break;
     }
   }
