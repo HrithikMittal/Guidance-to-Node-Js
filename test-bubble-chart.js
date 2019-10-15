@@ -121,11 +121,15 @@ function calldetails(details) {
     case "Callbacks": {
       document.getElementById("modal1").click();
       document.getElementById("exampleModalLongTitle").innerHTML = "Callbacks";
+      document.getElementById("content1").innerHTML =
+        "<div>Callbacks are the foundation of Node.js. Callbacks give you an interface with which to say,'and when you're done doing that, do all this.' This allows you to have as many IO operations as your OS can handle happening at the same time. For example, in a web server with hundreds or thousands of pending requests with multiple blocking queries, performing the blocking queries asynchronously gives you the ability to be able to continue working and not just sit still and wait until the blocking operations come back. This is a major improvement.<br />The typical convention with asynchronous functions(which almost all of your functions should be):<img src='./img/img2.png' width=100%'></div>";
       break;
     }
     case "Promises": {
       document.getElementById("modal1").click();
       document.getElementById("exampleModalLongTitle").innerHTML = "Promises";
+      document.getElementById("content1").innerHTML =
+        "<div>A Promise is a proxy for a value not necessarily known when the promise is created. It allows you to associate handlers to an asynchronous action's eventual success value or failure reason. This lets asynchronous methods return values like synchronous methods: instead of the final value, the asynchronous method returns a promise for the value at some point in the future.<br/><br/>In simple words “A promise is a word taken for some action, the other party who gave the promise might fulfill it or deny it”.In the case of fulfilling, the promise gets resolved, and in another case, it gets rejected.<br /><br/>We can create a promise in JavaScript and use it as an upcoming fact to describe few actions.Promises are kind of design patterns to remove the usage of unintuitive callbacks.<img src='./img/img3.png' width=100%'></div>";
       break;
     }
     case "Streams": {
