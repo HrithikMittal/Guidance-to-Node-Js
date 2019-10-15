@@ -24,16 +24,18 @@ body {
 
 .headinga {
   font-size: 3.5em;
-  width: 100%;
   font-style: bold;
+  margin: 0em auto;
   background-color: transparent;
   text-align: center;
-  margin: 0em auto;
+}
+.modal {
+  background: url(../img/Background.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
 }
 
-.subhead {
-  margin: -11em;
-}
 /* 
 @media only screen and (max-width: 400px) {
   .subhead {
@@ -146,12 +148,6 @@ body {
   }
 }
 
-.author {
-  position: relative;
-
-  margin: 100px;
-}
-
 .copyright {
   padding-top: 20px;
 }
@@ -170,7 +166,6 @@ body {
   position: relative;
   text-align: center;
   margin: 0em auto;
-  background-color: #000022;
 }
 
 .social {
@@ -200,7 +195,6 @@ body {
   color: #3498db;
 }
 .rounded-circle {
-  margin: 90px 0px;
   width: 300px;
   height: 280px;
 }
