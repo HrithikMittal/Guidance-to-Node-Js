@@ -1,6 +1,8 @@
-body {
+* {
   margin: 0px;
   padding: 0px;
+}
+body {
   background: url(../img/Background.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -15,31 +17,30 @@ body {
 .heading {
   font-size: 3.5em;
   font-style: bold;
-  text-align: center;
   margin: 4em auto;
   background-color: transparent;
+  text-align: center;
 }
 
 .headinga {
   font-size: 3.5em;
+  width: 100%;
   font-style: bold;
-  width: fit-content;
+  background-color: transparent
   text-align: center;
   margin: 0em auto;
 }
 
 .subhead {
   margin: -11em;
-
-  text-align: center;
 }
-
+/* 
 @media only screen and (max-width: 400px) {
   .subhead {
     /* margin: 0px auto 0px;
-    background-color: purple; */
+    background-color: purple; 
   }
-}
+} */
 
 .bubbleChart {
   width: 100%;
