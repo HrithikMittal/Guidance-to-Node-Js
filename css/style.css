@@ -140,6 +140,18 @@
   color: #74808a;
 }
 
+.authorh {
+  margin: 0px 0px 0px 0px;
+}
+.aheading {
+  font-size: 3.5em;
+  font-style: bold;
+  position: relative;
+  text-align: center;
+  margin: 0em auto;
+  background-color: #000022;
+}
+
 .social {
   text-align: right;
 }
@@ -165,4 +177,9 @@
 
 .social a:hover {
   color: #3498db;
+}
+.rounded-circle {
+  margin: 90px 0px;
+  width: 300px;
+  height: 280px;
 }
