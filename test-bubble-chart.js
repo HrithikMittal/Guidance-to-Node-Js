@@ -95,11 +95,69 @@ $(document).ready(function() {
     ]
   });
 });
+
+// { text: "Callbacks", count: "36" },
+// { text: "Promises", count: "182" },
+// { text: "Strams", count: "170" },
+// { text: "Pipes", count: "123" },
+// { text: "Events", count: "12" },
+// { text: "Module Paterns", count: "170" },
+// { text: "Generators", count: "382" },
+// { text: "Middleware", count: "10" },
+// { text: "Async/Await", count: "170" },
+// { text: "Axios", count: "170" },
+// { text: "Work Thread", count: "170" },
+// { text: "Others", count: "10" }
+
 function calldetails(details) {
   switch (details.text) {
     case "Generators": {
-      console.log("Generators");
       document.getElementById("modal1").click();
+      break;
+    }
+    case "Callbacks": {
+      document.getElementById("modal2").click();
+      break;
+    }
+    case "Promises": {
+      document.getElementById("modal3").click();
+      break;
+    }
+    case "Streams": {
+      document.getElementById("modal4").click();
+      break;
+    }
+    case "Pipes": {
+      document.getElementById("modal5").click();
+      break;
+    }
+    case "Events": {
+      document.getElementById("modal6").click();
+      break;
+    }
+    case "Module Patterns": {
+      document.getElementById("modal7").click();
+      break;
+    }
+    case "Middleware": {
+      document.getElementById("modal8").click();
+      break;
+    }
+    case "Async/Await": {
+      document.getElementById("modal9").click();
+      break;
+    }
+    case "Axios": {
+      document.getElementById("modal10").click();
+      break;
+    }
+    case "Work Thread": {
+      document.getElementById("modal11").click();
+      break;
+    }
+    case "Others": {
+      document.getElementById("modal12").click();
+      break;
     }
   }
   console.log(details);
