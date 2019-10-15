@@ -124,3 +124,45 @@
     opacity: 0;
   }
 }
+
+.author {
+  position: relative;
+
+  margin: 100px;
+}
+
+.copyright {
+  padding-top: 20px;
+}
+
+.copyright p {
+  margin: 0;
+  color: #74808a;
+}
+
+.social {
+  text-align: right;
+}
+
+.social ul {
+  margin: 5px 0 0 0;
+  padding: 0;
+  position: relative;
+  color: #000022;
+}
+
+.social li {
+  display: inline-block;
+  font-size: 1.25em;
+  list-style: none;
+}
+
+.social a {
+  display: block;
+  color: #276faa;
+  padding: 10px;
+}
+
+.social a:hover {
+  color: #3498db;
+}
