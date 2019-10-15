@@ -15,15 +15,29 @@ body {
 .heading {
   font-size: 3.5em;
   font-style: bold;
-  position: relative;
   text-align: center;
-  margin: 4em auto 4em;
+  margin: 4em auto;
   background-color: transparent;
 }
 
-@media only screen and (max-width: 200px) {
-  .heading {
-    margin: 100px;
+.headinga {
+  font-size: 3.5em;
+  font-style: bold;
+  width: fit-content;
+  text-align: center;
+  margin: 0em auto;
+}
+
+.subhead {
+  margin: -11em;
+
+  text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+  .subhead {
+    /* margin: 0px auto 0px;
+    background-color: purple; */
   }
 }
 
