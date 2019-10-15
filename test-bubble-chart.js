@@ -15,7 +15,7 @@ $(document).ready(function() {
       items: [
         { text: "Callbacks", count: "36" },
         { text: "Promises", count: "182" },
-        { text: "Strams", count: "170" },
+        { text: "Streams", count: "170" },
         { text: "Pipes", count: "123" },
         { text: "Events", count: "12" },
         { text: "Module Paterns", count: "170" },
@@ -113,50 +113,65 @@ function calldetails(details) {
   switch (details.text) {
     case "Generators": {
       document.getElementById("modal1").click();
+      document.getElementById("exampleModalLongTitle").innerHTML = "Generators";
       break;
     }
     case "Callbacks": {
-      document.getElementById("modal2").click();
+      document.getElementById("modal1").click();
+      document.getElementById("exampleModalLongTitle").innerHTML = "Callbacks";
       break;
     }
     case "Promises": {
-      document.getElementById("modal3").click();
+      document.getElementById("modal1").click();
+      document.getElementById("exampleModalLongTitle").innerHTML = "Promises";
       break;
     }
     case "Streams": {
-      document.getElementById("modal4").click();
+      document.getElementById("modal1").click();
+      document.getElementById("exampleModalLongTitle").innerHTML = "Streams";
       break;
     }
     case "Pipes": {
-      document.getElementById("modal5").click();
+      document.getElementById("modal1").click();
+      document.getElementById("exampleModalLongTitle").innerHTML = "Pipes";
       break;
     }
     case "Events": {
-      document.getElementById("modal6").click();
+      document.getElementById("modal1").click();
+      document.getElementById("exampleModalLongTitle").innerHTML = "Events";
       break;
     }
     case "Module Patterns": {
-      document.getElementById("modal7").click();
+      document.getElementById("modal1").click();
+      document.getElementById("exampleModalLongTitle").innerHTML =
+        "Module Patterns";
       break;
     }
     case "Middleware": {
-      document.getElementById("modal8").click();
+      document.getElementById("modal1").click();
+      document.getElementById("exampleModalLongTitle").innerHTML = "Middleware";
       break;
     }
     case "Async/Await": {
-      document.getElementById("modal9").click();
+      document.getElementById("modal1").click();
+      document.getElementById("exampleModalLongTitle").innerHTML =
+        "Async/Await";
       break;
     }
     case "Axios": {
-      document.getElementById("modal10").click();
+      document.getElementById("modal1").click();
+      document.getElementById("exampleModalLongTitle").innerHTML = "Axios";
       break;
     }
     case "Work Thread": {
-      document.getElementById("modal11").click();
+      document.getElementById("modal1").click();
+      document.getElementById("exampleModalLongTitle").innerHTML =
+        "Work Thread";
       break;
     }
     case "Others": {
-      document.getElementById("modal12").click();
+      document.getElementById("modal1").click();
+      document.getElementById("exampleModalLongTitle").innerHTML = "Others";
       break;
     }
   }
