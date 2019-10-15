@@ -50,7 +50,6 @@ $(document).ready(function() {
           centralClick: function(item) {
             /// Design it as box model for more details
             calldetails(item);
-            alert("Here is more details: " + item.text + "!!");
           }
         }
       },
@@ -100,6 +99,7 @@ function calldetails(details) {
   switch (details.text) {
     case "Generators": {
       console.log("Generators");
+      document.getElementById("modal1").click();
     }
   }
   console.log(details);
