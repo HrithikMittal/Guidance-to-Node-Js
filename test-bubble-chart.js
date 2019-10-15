@@ -158,14 +158,14 @@ function calldetails(details) {
       document.getElementById("exampleModalLongTitle").innerHTML =
         "Module Patterns";
       document.getElementById("content1").innerHTML =
-        "<div>Streams are collections of data — just like arrays or strings. The difference is that streams might not be available all at once, and they don’t have to fit in memory. This makes streams really powerful when working with large amounts of data, or data that’s coming from an external source one chunk at a time.<br /><br />However, streams are not only about working with big data.They also give us the power of composability in our code. Just like we can compose powerful linux commands by piping other smaller Linux commands, we can do exactly the same in Node with streams.<img src='./img/img4.png' width=100%'></div>";
+        "<div>In the module pattern as in all things, JavaScript offers few prescriptions. On the client-side “modules” are creatures of the build system and our imagination; Node.js implements a filesystem-based module pattern but leaves its use and abuse largely up to userland. Considerable freedom, minimal structure.<br/><br/>The good news ? These wide - open spaces include several well - worn patterns for authoring modules that are clear, flexible, and easily scaled inside a growing application.All we have to do is put them to use.<img src='./img/img7.png' width=100%'></div>";
       break;
     }
     case "Middleware": {
       document.getElementById("modal1").click();
       document.getElementById("exampleModalLongTitle").innerHTML = "Middleware";
       document.getElementById("content1").innerHTML =
-        "<div>Streams are collections of data — just like arrays or strings. The difference is that streams might not be available all at once, and they don’t have to fit in memory. This makes streams really powerful when working with large amounts of data, or data that’s coming from an external source one chunk at a time.<br /><br />However, streams are not only about working with big data.They also give us the power of composability in our code. Just like we can compose powerful linux commands by piping other smaller Linux commands, we can do exactly the same in Node with streams.<img src='./img/img4.png' width=100%'></div>";
+        "<div>Middleware functions are functions that have access to the request object (req), the response object (res), and the next function in the application’s request-response cycle. The next function is a function in the Express router which, when invoked, executes the middleware succeeding the current middleware.<br /><br />Middleware functions can perform the following tasks:<ol><li>Execute any code.</li><li>Make changes to the request and the response objects.</li><li>End the request - response cycle.</li><li>Call the next middleware in the stack.</li><img src='./img/img8.png' width=100%'></div>";
       break;
     }
     case "Async/Await": {
