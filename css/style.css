@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "Acme", sans-serif;
 }
 body {
   background: url(../img/Background.svg);
@@ -198,7 +199,7 @@ body {
   border: 5px solid;
   border-color: #000000;
   width: 300px;
-  height: 280px;
+  height: 300px;
 }
 
 /*Wrapper*/
