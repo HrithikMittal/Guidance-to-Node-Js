@@ -7,14 +7,76 @@
     <link href="https://fonts.googleapis.com/css?family=Acme|Amatic+SC&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <style>
+      
+      html,body{
+        height:100%;
+      }
+      .preloader2 {
+        font: 13px "Source Sans Pro", Arial, Helvetica, sans-serif;
+        background-color: #98bec8;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+      }
+      .preloader3 {
+        font: 13px "Source Sans Pro", Arial, Helvetica, sans-serif;
+        background-color: #98bec8;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+      }
+      
+      .moving-letters {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        height: 200px;
+      }
+    </style>
     <link rel="stylesheet" href="css/style.css" />
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,600,200italic,600italic&subset=latin,vietnamese" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,900' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script>var ml = { timelines: {} };</script>
     <title>Hello, world!</title>
   </head>
   <body>
+<div class="preloader2" id="preloader2">
+  <div class="moving-letters">
+    <h1 class="ml8">
+      <span class="letters-container">
+        <span class="letters letters-left">Hi</span>
+        <span class="letters bang">!</span>
+      </span>
+      <span class="circle circle-white"></span>
+      <span class="circle circle-dark"></span>
+      <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
+    </h1>
+  </div>
+</div>
+
+<div class="preloader3" id="preloader3">
+  <div class="moving-letters">
+    <h1 class="ml11">
+      <span class="text-wrapper">
+        <span class="line line1"></span>
+        <span class="letters">Welcome to the World of Node Js</span>
+      </span>
+    </h1>
+    </div>
+</div>
 
 
+
+  <div class="main2" id="main2">
     <!-- Starting the intro part -->
     <div class="container-fluid">
       <div class="row">
@@ -162,7 +224,7 @@
         </div>
       </footer>
     <!-- Ending of the footer part -->
-
+</div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -180,6 +242,7 @@
     <script src="./src/bubble-chart.js"></script>
     <script src="./src/plugins/central-click/central-click.js"></script>
     <script src="./src/plugins/lines/lines.js"></script>
+    <script src="./js/preloader.js"></script>
     <script src="test-bubble-chart.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
