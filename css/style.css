@@ -23,6 +23,10 @@ body {
   text-align: center;
 }
 
+.authorh{
+  margin:7em 0 0 0;
+}
+
 .headinga {
   font-size: 3.5em;
   font-style: bold;
