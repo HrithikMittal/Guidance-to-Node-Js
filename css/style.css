@@ -23,8 +23,8 @@ body {
   text-align: center;
 }
 
-.authorh{
-  margin:7em 0 0 0;
+.authorh {
+  margin: 7em 0 0 0;
 }
 
 .headinga {
@@ -433,7 +433,7 @@ h1.ml8 {
 }
 
 .main2 {
-  display: none;
+  /* display: none; */
 }
 
 .preloader3 {
