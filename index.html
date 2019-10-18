@@ -47,6 +47,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 <script>var ml = { timelines: {} };</script>
     <title>Hello, world!</title>
@@ -304,18 +308,50 @@
                 <h2 class="mb-0">
                   <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse9"
                     aria-expanded="false" aria-controls="collapse9">
-                    Now What?
+                    Now What Next?
                   </button>
                 </h2>
               </div>
               <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordionExample">
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-                  officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                  moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
-                  keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-                  butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-                  haven't heard of them accusamus labore sustainable VHS.
+                <div class="alert alert-success" role="alert">
+                  <h4 class="alert-heading">Well done!</h4>
+                  <p>Ya,you successfully done this part.</p>
+                  <hr>
+                </div>
+                <div class="toast" style="float:left;margin:10px 10px" data-autohide="false">
+                  <div class="toast-header">
+                    <strong class="mr-auto">Want to do the Project?</strong>
+                    <small class="text-muted">just now</small>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="toast-body">
+                    For the complete details, the step by step prodecure is given. Please refer <a href="https://medium.com/code-to-express/want-to-do-a-project-d55a4958c22c" target="_blank">this blog for how to start.</a> 
+                    <br />
+                    Want to get the solution than refer <a href="https://medium.com/code-to-express/stackoverflow-application-3232fb6d943f" target="_blank">this blog</a> for complete details. </a>
+                    You can also refer the github Repository for the code.
+                    <a href="https://github.com/HrithikMittal/Minature-Stackoverflow-APIs" target=_blank>https://github.com/HrithikMittal/Minature-Stackoverflow-APIs</a>.
+                  </div>
+                </div>
+                
+                <div class="toast" style="float:left" data-autohide="false">
+                  <div class="toast-header">
+                    <strong class="mr-auto">Wants to learn the Login/SignUp API</strong>
+                    <small class="text-muted">2 seconds ago</small>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="toast-body">
+                    For this please refer to 
+                    <a href="https://medium.com/code-to-express/login-and-signup-page-4a65fec162f1" target="_blank">this blog.</a>
+                    You can also refer the github Repository for the code.
+                    <a href="https://github.com/HrithikMittal/SignUp-and-Login-API"
+                      target=_blank>https://github.com/HrithikMittal/SignUp-and-Login-API</a>.
+                  </div>
+                </div>
                 </div>
               </div>
             </div>
@@ -453,6 +489,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
     <script src="./js/script.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="./bower_components/jquery/dist/jquery.min.js"></script>
@@ -471,6 +509,13 @@
     <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
     <script src="./js/particles.js"></script>
     <script src="./js/scroll.js"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.toast').toast('show');
+      });
+    </script>
   </body>
 </html>
