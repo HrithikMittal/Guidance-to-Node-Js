@@ -230,12 +230,17 @@
               </div>
               <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-                  officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                  moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
-                  keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-                  butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-                  haven't heard of them accusamus labore sustainable VHS.
+                  Lets now make a Signup route for [Showing the POST] the user i.e. ‘/signup’ for which we’ll take inputs from the user.
+                  <div class="alert alert-primary" role="alert">
+                    <script src="https://gist.github.com/HrithikMittal/32325b4bba9a614cafeac8d281009f1f.js"></script>
+                  </div>
+                  I’ll now explain everything that we did in the ‘/signup’ route. Firstly, this route is POST route as we can see we call
+                  post method by app.post. After that we make an object newUser from the model of User. We import his from user schema
+                  existing in model/User.js. After that, we save it into the database by .save() method and for Error handling, we use
+                  then and catch block. If there is any error then it would display in the catch block and if everything is fine, it would
+                  return back that object to use. All of this would come under callback function having request and response as parameters
+                  and in Node.js we’d do the asynchronous flow of process through a pipeline. This explains why we use await and async
+                  keywords.
                 </div>
               </div>
             </div>
@@ -250,12 +255,12 @@
               </div>
               <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample">
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-                  officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                  moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
-                  keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-                  butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-                  haven't heard of them accusamus labore sustainable VHS.
+                  Now, we fetch all the data from the database and show the user.
+                  
+                  <div class="alert alert-primary" role="alert">
+                  <script src="https://gist.github.com/HrithikMittal/74d2d9363bf6c27c9305c677fef262d2.js"></script>
+                  </div>
+                  To learn more about the find method please refer to the official <a href="https://docs.mongodb.com/manual/reference/method/db.collection.find/" target="_blank">docs </a>of MongoDB.
                 </div>
               </div>
             </div>
