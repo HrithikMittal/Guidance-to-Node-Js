@@ -130,8 +130,12 @@
           
               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
-                  First and foremost, you need to download NodeJs in your System. You can download it from the official website
-                  https://nodejs.org. If you have already downloaded NodeJs, then you can verify it by typing the following commands.
+                  Node.js is an open source, cross-platform runtime environment for developing server-side and networking applications. Node.js applications are written in JavaScript, and can be run within the Node.js runtime on OS X, Microsoft Windows, and Linux.
+                  <br />
+                  Node.js also provides a rich library of various JavaScript modules which simplifies the development of web applications using Node.js to a great extent.
+                  <div class="alert alert-primary" role="alert">
+                    Node.js = Runtime Environment + JavaScript Library
+                  </div>
                 </div>
               </div>
             </div>
@@ -140,11 +144,91 @@
                 <h2 class="mb-0">
                   <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="false" aria-controls="collapseTwo">
-                    Collapsible Group Item #2
+                    Creating the Server
                   </button>
                 </h2>
               </div>
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body" >
+                  Now we are going to create the server with the help of http module which is built-in module in Node Js.<br />
+                  To include the HTTP module, use the require() method <br />
+                  The HTTP module can create an HTTP server that listens to server ports and gives a response back to the client.
+                  <br />
+                  Use the createServer() method to create an HTTP server<br />
+                  The function passed into the http.createServer() method, will be executed when someone tries to access the computer on port 8080 (process.env.PORT).
+                  <div class="alert alert-primary" role="alert">
+                    <script src="https://gist.github.com/HrithikMittal/38a92563cef4b8ecef1704e884ad6ddb.js"></script>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                    aria-expanded="false" aria-controls="collapseThree">
+                    Introduction to Express
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and
+                  mobile applications.<br />
+                  As it is not an in-built package of Node js. So we have to installed it externally with the help of npm(node package manager).<br />
+                  <div class="alert alert-primary" role="alert">
+                    npm init <br />
+                    npm install express</div><div class="alert alert-primary" role="alert">
+                    <script src="https://gist.github.com/HrithikMittal/6fff7119b5bbb0f9ee1e00786a9317c7.js"></script>
+                  </div>
+                  If you want more detail of how to start a new project Please refer <a target="_blank" href="https://medium.com/code-to-express/starting-with-nodejs-b70679e8101f">this blog on medium.</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4"
+                    aria-expanded="false" aria-controls="collapse4">
+                    Connection to Database (MongoDB)
+                  </button>
+                </h2>
+              </div>
+              <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+                <div class="card-body">
+                  For the connnection with the mongodb we are going to use another npm package mongoose and install like this:
+                  <div class="alert alert-primary" role="alert">
+                    npm install mongoose
+                  </div>
+                  Now we have to make a mongoose Model in which we define our parameters that we are going to take from the User for
+                  SignUp. For this purpose, make a directory named models and make a file User.js<br />
+                  <div class="alert alert-primary" role="alert">
+                  <script src="https://gist.github.com/HrithikMittal/9e5915c73d99171be22ef6ad8c335064.js"></script></div>
+                  After which, we have to connect to a Database. So for making a database setup, we create a new directory (mysetup). This
+                  is because if you want to change your database, you can do it very easily. For now, I’ll only take local database
+                  (MongoDB). You can install MongoDB in your system from the official website
+                  https://www.mongodb.com/download-center/community
+                  <div class="alert alert-primary" role="alert">
+                    <script src="https://gist.github.com/HrithikMittal/2f8dace4c580dc23aa037f7ebd5c22e5.js"></script></script>
+                  </div>
+                  Finally... (If you have any doubt regarding the promises[then/catch] please refer<i> point to ponder </i>section )
+                  <div class="alert alert-primary" role="alert">
+                    <script src="https://gist.github.com/HrithikMittal/ac4a1519eea14554f101b48530514c3b.js"></script>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse5"
+                    aria-expanded="false" aria-controls="collapse5">
+                    Post the data to the Database
+                  </button>
+                </h2>
+              </div>
+              <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
                 <div class="card-body">
                   Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
                   officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
@@ -158,13 +242,73 @@
             <div class="card">
               <div class="card-header" id="headingThree">
                 <h2 class="mb-0">
-                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
-                    aria-expanded="false" aria-controls="collapseThree">
-                    Collapsible Group Item #3
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse6"
+                    aria-expanded="false" aria-controls="collapse6">
+                    Get the data from the database
                   </button>
                 </h2>
               </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+                  officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                  moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
+                  keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                  butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                  haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse7"
+                    aria-expanded="false" aria-controls="collapse7">
+                    Update the data into the Database
+                  </button>
+                </h2>
+              </div>
+              <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordionExample">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+                  officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                  moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
+                  keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                  butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                  haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse8"
+                    aria-expanded="false" aria-controls="collapse8">
+                    Delete the Data from the database
+                  </button>
+                </h2>
+              </div>
+              <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionExample">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+                  officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                  moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
+                  keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                  butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                  haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse9"
+                    aria-expanded="false" aria-controls="collapse9">
+                    Now What?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordionExample">
                 <div class="card-body">
                   Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
                   officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
