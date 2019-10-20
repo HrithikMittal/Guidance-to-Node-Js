@@ -38,52 +38,109 @@
         margin: auto;
         height: 200px;
       }
+    .icon-bar {
+      width:100%;
+      height:100%;
+      position: fixed;
+      z-index:10;
+      margin-right: 100%;
+    }
+    .icon-bar > button{
+      width: 80px;
+      height:80px;
+      float:right;
+      margin-right:0px;
+    }
+    .floatingdiv{
+      margin-right:0px;
+    }
+    .icon-bar > .floatingdiv{
+      width: 80px;
+      height:80px;
+      border-radius: 40px;
+      float:right;
+      margin-right:0px;
+    }
     </style>
     
-    <link rel="stylesheet" href="css/style.css" />
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,600,200italic,600italic&subset=latin,vietnamese" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/style.css" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,600,200italic,600italic&subset=latin,vietnamese" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,900' rel='stylesheet' type='text/css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script>var ml = { timelines: {} };</script>
-    <title>Hello, world!</title>
-  </head>
-  <body>
-<div class="preloader2" id="preloader2">
-  <div class="moving-letters">
-    <h1 class="ml8">
-      <span class="letters-container">
-        <span class="letters letters-left">Hi</span>
-        <span class="letters bang">!</span>
-      </span>
-      <span class="circle circle-white"></span>
-      <span class="circle circle-dark"></span>
-      <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
-    </h1>
-  </div>
-</div>
-
-<div class="preloader3" id="preloader3">
-  <div class="moving-letters">
-    <h1 class="ml11">
-      <span class="text-wrapper">
-        <span class="line line1"></span>
-        <span class="letters">Welcome to the World of Node Js</span>
-      </span>
-    </h1>
+    
+<title>Hello, world!</title>
+</head>
+<body>
+    
+  <div class="preloader2" id="preloader2">
+    <div class="moving-letters">
+      <h1 class="ml8">
+        <span class="letters-container">
+          <span class="letters letters-left">Hi</span>
+          <span class="letters bang">!</span>
+        </span>
+        <span class="circle circle-white"></span>
+        <span class="circle circle-dark"></span>
+        <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
+      </h1>
     </div>
-</div>
+  </div>
 
+  <div class="preloader3" id="preloader3">
+    <div class="moving-letters">
+      <h1 class="ml11">
+        <span class="text-wrapper">
+          <span class="line line1"></span>
+          <span class="letters">Welcome to the World of Node Js</span>
+        </span>
+      </h1>
+      </div>
+  </div>
 
 
   <div class="main2" id="main2">
+
+  <div class="icon-bar">
+    <!-- staring of the floating button -->
+    <button type="button" class="btn btn-block btn-outline-danger" onclick="myfun()" style="border-bottom-left-radius: 100px;" >More</button>
+    <!-- ending of the floating button -->  
+    
+    <!-- starting of the floating div -->
+      <div id="floatingdiv" class="floatingdiv"
+        style="display:none;height:280px;width:300px;background-color: rgba(19, 172, 199, 0.233);border-radius: 10px;">
+        <div class="toast" style="float:left;margin:10px 10px" data-autohide="false">
+          <div class="toast-header">
+            <strong class="mr-auto">Want the exact Code</strong>
+            <small class="text-muted">just now</small>
+            <button  class="ml-2 mb-1 close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="toast-body">
+            For getting complete Guide again from basic after this. Please refer here <a
+              href="https://github.com/HrithikMittal/Node-Js-1" target="_blank">https://github.com/HrithikMittal/Node-Js-1</a>
+            <br />
+            To learn the Concept of Node Js. Please refer here <a <a href="https://github.com/HrithikMittal/Node-Js-2"
+              target="_blank">https://github.com/HrithikMittal/Node-Js-2 </a>
+            <br />
+            For contribution please refer this Repository <a href="https://github.com/HrithikMittal/Guidance-to-Node-Js"
+              target="_blank">https://github.com/HrithikMittal/Guidance-to-Node-Js</a>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- ending of the floating div -->
+
+
+
     <!-- Starting the intro part -->
     <div class="container-fluid">
       <div class="row">
@@ -109,296 +166,293 @@
     </div>
     <!-- Ending of intro part  -->
 
-
-  
-  <!-- Learn the Node JS start from here -->
-  <div class="container-fluid" id="section2">
-    <div class="row">
-      <div class="col-sm">
-        <h1 class="headinga">
-          <b class="subhead" style="position: relative;">Let's dive into Node JS</b>
-        </h1>
-        <h1 class="headinga" style="text-align: left;font-size: 40px;margin:2em 5px 0 0">
-          <b class="subhead" style="position: relative;text-align: left;">How to Start</b>
-        </h1>
-          <div class="accordion" id="accordionExample">
-            <div class="card">
-              <div class="card-header" id="headingOne">
-                <h2 class="mb-0">
-                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    Introduction to Node Js
-                  </button>
-                </h2>
-              </div>
-          
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                  Node.js is an open source, cross-platform runtime environment for developing server-side and networking applications. Node.js applications are written in JavaScript, and can be run within the Node.js runtime on OS X, Microsoft Windows, and Linux.
-                  <br />
-                  Node.js also provides a rich library of various JavaScript modules which simplifies the development of web applications using Node.js to a great extent.
-                  <div class="alert alert-primary" role="alert">
-                    Node.js = Runtime Environment + JavaScript Library
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="false" aria-controls="collapseTwo">
-                    Creating the Server
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body" >
-                  Now we are going to create the server with the help of http module which is built-in module in Node Js.<br />
-                  To include the HTTP module, use the require() method <br />
-                  The HTTP module can create an HTTP server that listens to server ports and gives a response back to the client.
-                  <br />
-                  Use the createServer() method to create an HTTP server<br />
-                  The function passed into the http.createServer() method, will be executed when someone tries to access the computer on port 8080 (process.env.PORT).
-                  <div class="alert alert-primary" role="alert">
-                    <script src="https://gist.github.com/HrithikMittal/38a92563cef4b8ecef1704e884ad6ddb.js"></script>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
-                    aria-expanded="false" aria-controls="collapseThree">
-                    Introduction to Express
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
-                  Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and
-                  mobile applications.<br />
-                  As it is not an in-built package of Node js. So we have to installed it externally with the help of npm(node package manager).<br />
-                  <div class="alert alert-primary" role="alert">
-                    npm init <br />
-                    npm install express</div><div class="alert alert-primary" role="alert">
-                    <script src="https://gist.github.com/HrithikMittal/6fff7119b5bbb0f9ee1e00786a9317c7.js"></script>
-                  </div>
-                  If you want more detail of how to start a new project Please refer <a target="_blank" href="https://medium.com/code-to-express/starting-with-nodejs-b70679e8101f">this blog on medium.</a>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4"
-                    aria-expanded="false" aria-controls="collapse4">
-                    Connection to Database (MongoDB)
-                  </button>
-                </h2>
-              </div>
-              <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
-                <div class="card-body">
-                  For the connnection with the mongodb we are going to use another npm package mongoose and install like this:
-                  <div class="alert alert-primary" role="alert">
-                    npm install mongoose
-                  </div>
-                  Now we have to make a mongoose Model in which we define our parameters that we are going to take from the User for
-                  SignUp. For this purpose, make a directory named models and make a file User.js<br />
-                  <div class="alert alert-primary" role="alert">
-                  <script src="https://gist.github.com/HrithikMittal/9e5915c73d99171be22ef6ad8c335064.js"></script></div>
-                  After which, we have to connect to a Database. So for making a database setup, we create a new directory (mysetup). This
-                  is because if you want to change your database, you can do it very easily. For now, I’ll only take local database
-                  (MongoDB). You can install MongoDB in your system from the official website
-                  https://www.mongodb.com/download-center/community
-                  <div class="alert alert-primary" role="alert">
-                    <script src="https://gist.github.com/HrithikMittal/2f8dace4c580dc23aa037f7ebd5c22e5.js"></script></script>
-                  </div>
-                  Finally... (If you have any doubt regarding the promises[then/catch] please refer<i> point to ponder </i>section )
-                  <div class="alert alert-primary" role="alert">
-                    <script src="https://gist.github.com/HrithikMittal/ac4a1519eea14554f101b48530514c3b.js"></script>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse5"
-                    aria-expanded="false" aria-controls="collapse5">
-                    Post the data to the Database
-                  </button>
-                </h2>
-              </div>
-              <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
-                <div class="card-body">
-                  Lets now make a Signup route for [Showing the POST] the user i.e. ‘/signup’ for which we’ll take inputs from the user.
-                  <div class="alert alert-primary" role="alert">
-                    <script src="https://gist.github.com/HrithikMittal/32325b4bba9a614cafeac8d281009f1f.js"></script>
-                  </div>
-                  I’ll now explain everything that we did in the ‘/signup’ route. Firstly, this route is POST route as we can see we call
-                  post method by app.post. After that we make an object newUser from the model of User. We import his from user schema
-                  existing in model/User.js. After that, we save it into the database by .save() method and for Error handling, we use
-                  then and catch block. If there is any error then it would display in the catch block and if everything is fine, it would
-                  return back that object to use. All of this would come under callback function having request and response as parameters
-                  and in Node.js we’d do the asynchronous flow of process through a pipeline. This explains why we use await and async
-                  keywords.
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse6"
-                    aria-expanded="false" aria-controls="collapse6">
-                    Get the data from the database
-                  </button>
-                </h2>
-              </div>
-              <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample">
-                <div class="card-body">
-                  Now, we fetch all the data from the database and show the user.
-                  
-                  <div class="alert alert-primary" role="alert">
-                  <script src="https://gist.github.com/HrithikMittal/74d2d9363bf6c27c9305c677fef262d2.js"></script>
-                  </div>
-                  To learn more about the find method please refer to the official <a href="https://docs.mongodb.com/manual/reference/method/db.collection.find/" target="_blank">docs </a>of MongoDB.
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse7"
-                    aria-expanded="false" aria-controls="collapse7">
-                    Update the data into the Database
-                  </button>
-                </h2>
-              </div>
-              <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordionExample">
-                <div class="card-body">
-                  <div class="alert alert-primary" role="alert">
-                  <script src="https://gist.github.com/HrithikMittal/3f9c9501b307efc383e72ab5746d7132.js"></script></div>
-                  To read more abou the update please refer the official
-                  <a href="https://docs.mongodb.com/manual/reference/method/db.collection.update/" target="_blank">docs.</a>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse8"
-                    aria-expanded="false" aria-controls="collapse8">
-                    Delete the Data from the database
-                  </button>
-                </h2>
-              </div>
-              <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionExample">
-                <div class="card-body">
-                  <div class="alert alert-primary" role="alert">
-                  <script src="https://gist.github.com/HrithikMittal/4a6b7ad1c565f89c544a059c5e05eb82.js"></script></div>
-                  To read more about the delete please refer the official <a href="https://docs.mongodb.com/v3.2/tutorial/remove-documents/">docs.</a>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse9"
-                    aria-expanded="false" aria-controls="collapse9">
-                    Now What Next?
-                  </button>
-                </h2>
-              </div>
-              <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordionExample">
-                <div class="card-body">
-                <div class="alert alert-success" role="alert">
-                  <h4 class="alert-heading">Well done!</h4>
-                  <p>Ya,you successfully done this part.</p>
-                  <hr>
-                </div>
-                <div class="toast" style="float:left;margin:10px 10px" data-autohide="false">
-                  <div class="toast-header">
-                    <strong class="mr-auto">Want to do the Project?</strong>
-                    <small class="text-muted">just now</small>
-                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
+    <!-- Learn the Node JS start from here -->
+    <div class="container-fluid" id="section2">
+      <div class="row">
+        <div class="col-sm">
+          <h1 class="headinga">
+            <b class="subhead" style="position: relative;">Let's dive into Node JS</b>
+          </h1>
+          <h1 class="headinga" style="text-align: left;font-size: 40px;margin:2em 5px 0 0">
+            <b class="subhead" style="position: relative;text-align: left;">How to Start</b>
+          </h1>
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                      aria-expanded="true" aria-controls="collapseOne">
+                      Introduction to Node Js
                     </button>
-                  </div>
-                  <div class="toast-body">
-                    For the complete details, the step by step prodecure is given. Please refer <a href="https://medium.com/code-to-express/want-to-do-a-project-d55a4958c22c" target="_blank">this blog for how to start.</a> 
+                  </h2>
+                </div>
+            
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Node.js is an open source, cross-platform runtime environment for developing server-side and networking applications. Node.js applications are written in JavaScript, and can be run within the Node.js runtime on OS X, Microsoft Windows, and Linux.
                     <br />
-                    Want to get the solution than refer <a href="https://medium.com/code-to-express/stackoverflow-application-3232fb6d943f" target="_blank">this blog</a> for complete details. </a>
-                    You can also refer the github Repository for the code.
-                    <a href="https://github.com/HrithikMittal/Minature-Stackoverflow-APIs" target=_blank>https://github.com/HrithikMittal/Minature-Stackoverflow-APIs</a>.
+                    Node.js also provides a rich library of various JavaScript modules which simplifies the development of web applications using Node.js to a great extent.
+                    <div class="alert alert-primary" role="alert">
+                      Node.js = Runtime Environment + JavaScript Library
+                    </div>
                   </div>
                 </div>
-                
-                <div class="toast" style="float:left;margin:10px 10px" data-autohide="false">
-                  <div class="toast-header">
-                    <strong class="mr-auto">Wants to learn the Login/SignUp API</strong>
-                    <small class="text-muted">2 seconds ago</small>
-                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                      aria-expanded="false" aria-controls="collapseTwo">
+                      Creating the Server
                     </button>
-                  </div>
-                  <div class="toast-body">
-                    For this please refer to 
-                    <a href="https://medium.com/code-to-express/login-and-signup-page-4a65fec162f1" target="_blank">this blog.</a>
-                    You can also refer the github Repository for the code.
-                    <a href="https://github.com/HrithikMittal/SignUp-and-Login-API"
-                      target=_blank>https://github.com/HrithikMittal/SignUp-and-Login-API</a>.
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body" >
+                    Now we are going to create the server with the help of http module which is built-in module in Node Js.<br />
+                    To include the HTTP module, use the require() method <br />
+                    The HTTP module can create an HTTP server that listens to server ports and gives a response back to the client.
+                    <br />
+                    Use the createServer() method to create an HTTP server<br />
+                    The function passed into the http.createServer() method, will be executed when someone tries to access the computer on port 8080 (process.env.PORT).
+                    <div class="alert alert-primary" role="alert">
+                      <script src="https://gist.github.com/HrithikMittal/38a92563cef4b8ecef1704e884ad6ddb.js"></script>
+                    </div>
                   </div>
                 </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                      aria-expanded="false" aria-controls="collapseThree">
+                      Introduction to Express
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and
+                    mobile applications.<br />
+                    As it is not an in-built package of Node js. So we have to installed it externally with the help of npm(node package manager).<br />
+                    <div class="alert alert-primary" role="alert">
+                      npm init <br />
+                      npm install express</div><div class="alert alert-primary" role="alert">
+                      <script src="https://gist.github.com/HrithikMittal/6fff7119b5bbb0f9ee1e00786a9317c7.js"></script>
+                    </div>
+                    If you want more detail of how to start a new project Please refer <a target="_blank" href="https://medium.com/code-to-express/starting-with-nodejs-b70679e8101f">this blog on medium.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4"
+                      aria-expanded="false" aria-controls="collapse4">
+                      Connection to Database (MongoDB)
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+                  <div class="card-body">
+                    For the connnection with the mongodb we are going to use another npm package mongoose and install like this:
+                    <div class="alert alert-primary" role="alert">
+                      npm install mongoose
+                    </div>
+                    Now we have to make a mongoose Model in which we define our parameters that we are going to take from the User for
+                    SignUp. For this purpose, make a directory named models and make a file User.js<br />
+                    <div class="alert alert-primary" role="alert">
+                    <script src="https://gist.github.com/HrithikMittal/9e5915c73d99171be22ef6ad8c335064.js"></script></div>
+                    After which, we have to connect to a Database. So for making a database setup, we create a new directory (mysetup). This
+                    is because if you want to change your database, you can do it very easily. For now, I’ll only take local database
+                    (MongoDB). You can install MongoDB in your system from the official website
+                    https://www.mongodb.com/download-center/community
+                    <div class="alert alert-primary" role="alert">
+                      <script src="https://gist.github.com/HrithikMittal/2f8dace4c580dc23aa037f7ebd5c22e5.js"></script></script>
+                    </div>
+                    Finally... (If you have any doubt regarding the promises[then/catch] please refer<i> point to ponder </i>section )
+                    <div class="alert alert-primary" role="alert">
+                      <script src="https://gist.github.com/HrithikMittal/ac4a1519eea14554f101b48530514c3b.js"></script>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse5"
+                      aria-expanded="false" aria-controls="collapse5">
+                      Post the data to the Database
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Lets now make a Signup route for [Showing the POST] the user i.e. ‘/signup’ for which we’ll take inputs from the user.
+                    <div class="alert alert-primary" role="alert">
+                      <script src="https://gist.github.com/HrithikMittal/32325b4bba9a614cafeac8d281009f1f.js"></script>
+                    </div>
+                    I’ll now explain everything that we did in the ‘/signup’ route. Firstly, this route is POST route as we can see we call
+                    post method by app.post. After that we make an object newUser from the model of User. We import his from user schema
+                    existing in model/User.js. After that, we save it into the database by .save() method and for Error handling, we use
+                    then and catch block. If there is any error then it would display in the catch block and if everything is fine, it would
+                    return back that object to use. All of this would come under callback function having request and response as parameters
+                    and in Node.js we’d do the asynchronous flow of process through a pipeline. This explains why we use await and async
+                    keywords.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse6"
+                      aria-expanded="false" aria-controls="collapse6">
+                      Get the data from the database
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Now, we fetch all the data from the database and show the user.
+                    
+                    <div class="alert alert-primary" role="alert">
+                    <script src="https://gist.github.com/HrithikMittal/74d2d9363bf6c27c9305c677fef262d2.js"></script>
+                    </div>
+                    To learn more about the find method please refer to the official <a href="https://docs.mongodb.com/manual/reference/method/db.collection.find/" target="_blank">docs </a>of MongoDB.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse7"
+                      aria-expanded="false" aria-controls="collapse7">
+                      Update the data into the Database
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <div class="alert alert-primary" role="alert">
+                    <script src="https://gist.github.com/HrithikMittal/3f9c9501b307efc383e72ab5746d7132.js"></script></div>
+                    To read more abou the update please refer the official
+                    <a href="https://docs.mongodb.com/manual/reference/method/db.collection.update/" target="_blank">docs.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse8"
+                      aria-expanded="false" aria-controls="collapse8">
+                      Delete the Data from the database
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <div class="alert alert-primary" role="alert">
+                    <script src="https://gist.github.com/HrithikMittal/4a6b7ad1c565f89c544a059c5e05eb82.js"></script></div>
+                    To read more about the delete please refer the official <a href="https://docs.mongodb.com/v3.2/tutorial/remove-documents/">docs.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse9"
+                      aria-expanded="false" aria-controls="collapse9">
+                      Now What Next?
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordionExample">
+                  <div class="card-body">
+                  <div class="alert alert-success" role="alert">
+                    <h4 class="alert-heading">Well done!</h4>
+                    <p>Ya,you successfully done this part.</p>
+                    <hr>
+                  </div>
+                  <div class="toast" style="float:left;margin:10px 10px" data-autohide="false">
+                    <div class="toast-header">
+                      <strong class="mr-auto">Want to do the Project?</strong>
+                      <small class="text-muted">just now</small>
+                      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="toast-body">
+                      For the complete details, the step by step prodecure is given. Please refer <a href="https://medium.com/code-to-express/want-to-do-a-project-d55a4958c22c" target="_blank">this blog for how to start.</a> 
+                      <br />
+                      Want to get the solution than refer <a href="https://medium.com/code-to-express/stackoverflow-application-3232fb6d943f" target="_blank">this blog</a> for complete details. </a>
+                      You can also refer the github Repository for the code.
+                      <a href="https://github.com/HrithikMittal/Minature-Stackoverflow-APIs" target=_blank>https://github.com/HrithikMittal/Minature-Stackoverflow-APIs</a>.
+                    </div>
+                  </div>
+                  
+                  <div class="toast" style="float:left;margin:10px 10px" data-autohide="false">
+                    <div class="toast-header">
+                      <strong class="mr-auto">Wants to learn the Login/SignUp API</strong>
+                      <small class="text-muted">2 seconds ago</small>
+                      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="toast-body">
+                      For this please refer to 
+                      <a href="https://medium.com/code-to-express/login-and-signup-page-4a65fec162f1" target="_blank">this blog.</a>
+                      You can also refer the github Repository for the code.
+                      <a href="https://github.com/HrithikMittal/SignUp-and-Login-API"
+                        target=_blank>https://github.com/HrithikMittal/SignUp-and-Login-API</a>.
+                    </div>
+                  </div>
+                  </div>
                 </div>
               </div>
             </div>
+        </div>
+      </div>
+    </div>
+    <!-- Learn the Node Js ends here -->
+
+    <!-- Starting of concepts part -->
+    <div class="container-fluid section2" >
+      <div class="row">
+        <div class="col-sm">
+          <h1 class="headinga" style="text-align: left;font-size: 40px;margin:2em 5px 0 0">
+            <b class="subhead" style="position: relative;text-align: left;">Points to be Ponder</b>
+          </h1>
+          <div class="bubbleChart animated bounce delay-15s" style="background-color: transparent;"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Ending of concept part -->
+  
+    <!-- Modal 1 starts here for all -->
+    <button type="button" class="btn btn-primary" id="modal1" data-toggle="modal" data-target="#exampleModalCenter"
+      style="display: none;">
+    </button>
+    
+    <div class="modal fade" id="exampleModalCenter" id="modal1" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-      </div>
-    </div>
-  </div>
-  <!-- Learn the Node Js ends here -->
-
-  <!-- Starting of concepts part -->
-  <div class="container-fluid section2" >
-    <div class="row">
-      <div class="col-sm">
-        <h1 class="headinga" style="text-align: left;font-size: 40px;margin:2em 5px 0 0">
-          <b class="subhead" style="position: relative;text-align: left;">Points to be Ponder</b>
-        </h1>
-        <div class="bubbleChart animated bounce delay-15s" style="background-color: transparent;"></div>
-      </div>
-    </div>
-  </div>
-  <!-- Ending of concept part -->
-  
-  <!-- Modal 1 starts here for all -->
-  <button type="button" class="btn btn-primary" id="modal1" data-toggle="modal" data-target="#exampleModalCenter"
-    style="display: none;">
-  </button>
-  
-  <div class="modal fade" id="exampleModalCenter" id="modal1" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle"></h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body" id="content1"></div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal"
-            style="color: #13abc7;border-color: #13abc7;">Close</button>
+          <div class="modal-body" id="content1"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal"
+              style="color: #13abc7;border-color: #13abc7;">Close</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Modal 1 ends here for all -->
-
+    <!-- Modal 1 ends here for all -->
 
     <!--Starting of the author part-->
     <div class="container-fluid authorh">
@@ -441,7 +495,7 @@
       
       </div>
     </div>
-<!-- Ending of the author part -->
+    <!-- Ending of the author part -->
 
     <!-- Starting of the footer part -->
       <footer style="padding: 25px;">
@@ -484,7 +538,10 @@
       </footer>
     <!-- Ending of the footer part -->
 </div>
-    <!-- Optional JavaScript -->
+
+
+
+<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -514,6 +571,15 @@
       $(document).ready(function () {
         $('.toast').toast('show');
       });
+      function myfun(){
+        if(document.getElementById('floatingdiv').style.display == "none")
+        {
+          document.getElementById('floatingdiv').style.display ="block";
+        }
+        else{
+          document.getElementById('floatingdiv').style.display ="none";
+        }
+      }
     </script>
   </body>
 </html>
